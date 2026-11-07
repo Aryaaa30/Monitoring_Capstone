@@ -1,0 +1,15 @@
+{
+  "name": "monitoring-capstone-root",
+  "version": "1.0.0",
+  "description": "Root workspace untuk Sistem Monitoring Kehadiran Capstone UMY",
+  "private": true,
+  "scripts": {
+    "dev": "node run-all.js",
+    "start": "node run-all.js",
+    "frontend": "npm --prefix frontend run dev",
+    "backend": "npm --prefix backend run start:dev",
+    "build:frontend": "npm --prefix frontend run build",
+    "build:backend": "npm --prefix backend run build",
+    "build": "npm --prefix backend run build && npm --prefix frontend run build"
+  }
+}
